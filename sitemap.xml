@@ -7,24 +7,4 @@
     <changefreq>weekly</changefreq>
   </url>
 
-  <url>
-    <loc>https://www.lombokweb.site/#layanan</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.lombokweb.site/#portofolio</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.lombokweb.site/#harga</loc>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.lombokweb.site/#cta</loc>
-    <priority>0.7</priority>
-  </url>
-
 </urlset>
