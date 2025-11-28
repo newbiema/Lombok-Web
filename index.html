@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LombokWeb — Jasa Pembuatan Website Profesional untuk UMKM & Wisata Lombok</title>
+  <meta name="description" content="LombokWeb spesialis jasa pembuatan website untuk UMKM, travel, homestay di Lombok. Website cepat, mobile-friendly, dengan integrasi WhatsApp. Harga terjangkau untuk pelaku usaha lokal." />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="keywords" content="jasa pembuatan website lombok, website lombok, pembuatan website umkm lombok, website travel lombok, homestay website lombok, toko online lombok, seo lombok" />
+  <meta name="author" content="LombokWeb" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lombokweb.com" />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="LombokWeb — Jasa Pembuatan Website Profesional untuk UMKM & Wisata Lombok" />
+  <meta property="og:description" content="Spesialis pembuatan website untuk bisnis lokal di Lombok. Desain modern, cepat, dan terintegrasi WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lombokweb.com" />
+  <meta property="og:image" content="https://lombokweb.com/img/logo.png" />
+  <meta property="og:site_name" content="LombokWeb" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LombokWeb — Jasa Website Profesional untuk UMKM Lombok" />
+  <meta name="twitter:description" content="Buat website bisnis Anda di Lombok dengan harga terjangkau. Sudah termasuk domain, hosting, dan support." />
+  <meta name="twitter:image" content="https://lombokweb.com/img/logo.png" />
+
+  <!-- Preload critical resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/output.css">
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+</head>
+
+<body class="bg-slate-50 text-dark overflow-x-hidden">
+  <!-- Navbar -->
+  <header class="fixed top-0 inset-x-0 z-30 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <!-- Logo & Brand -->
+      <a href="#hero" class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-white overflow-hidden">
+          <img src="img/logo.png" alt="LombokWeb Logo - Jasa Pembuatan Website Lombok" class="w-full h-full object-contain">
+        </span>
+        <div class="leading-tight">
+          <span class="font-semibold text-lg">LombokWeb</span>
+          <p class="text-xs text-slate-500 -mt-0.5">Website UMKM & Wisata</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#layanan" class="text-slate-600 hover:text-primary transition-colors">Layanan</a>
+        <a href="#portofolio" class="text-slate-600 hover:text-primary transition-colors">Portofolio</a>
+        <a href="#harga" class="text-slate-600 hover:text-primary transition-colors">Harga</a>
+        <a href="#cta" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-white shadow-sm hover:bg-primary/90 transition-colors">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Konsultasi</span>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-lg border border-slate-300 text-slate-700 transition-colors">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white/95 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm font-medium">
+        <a href="#layanan" class="py-2 text-slate-700 hover:text-primary transition-colors">Layanan</a>
+        <a href="#portofolio" class="py-2 text-slate-700 hover:text-primary transition-colors">Portofolio</a>
+        <a href="#harga" class="py-2 text-slate-700 hover:text-primary transition-colors">Harga</a>
+        <a href="#cta" class="mt-2 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-primary text-white shadow-sm hover:bg-primary/90 transition-colors">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Konsultasi</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-10">
+    <!-- Hero Section dengan SEO yang Tetap Kuat tapi Lebih Minimal -->
+    <section id="hero" class="py-10 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-blue-50/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+        
+        <!-- Teks Utama -->
+        <div data-aos="fade-right" data-aos-once="true">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Jasa Pembuatan Website di Lombok</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-4">
+            Jasa Pembuatan Website Lombok<br class="hidden sm:block" />
+            untuk UMKM & Wisata.
+        </h1>
+
+        <p class="text-sm sm:text-base text-slate-600 mb-4">
+            <strong>LombokWeb</strong> membantu bisnis lokal di Lombok punya website yang rapi, mudah diakses,
+            dan langsung terhubung ke WhatsApp. Cocok untuk <strong>UMKM, travel, homestay, villa, coffee shop</strong>, dan usaha jasa.
+        </p>
+
+        <p class="text-sm sm:text-base text-slate-700 mb-5">
+            Mulai dari <strong>Rp1,5 juta</strong> untuk website profesional yang siap dipakai jangka panjang.
+        </p>
+
+        <!-- USP singkat -->
+        <div class="flex flex-wrap gap-2 mb-6 text-[11px] sm:text-xs">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700">
+            <i class="fa-solid fa-mobile-screen text-primary"></i>
+            <span>Mobile friendly</span>
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700">
+            <i class="fa-brands fa-whatsapp text-green-500"></i>
+            <span>Terhubung ke WhatsApp</span>
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700">
+            <i class="fa-solid fa-magnifying-glass text-primary"></i>
+            <span>Siap untuk Google</span>
+            </span>
+        </div>
+
+        <!-- CTA -->
+        <div class="flex flex-wrap items-center gap-3 mb-5">
+            <a href="#cta" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-white text-sm font-medium shadow-lg hover:bg-primary/90 transition-all duration-300">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Konsultasi Gratis via WA</span>
+            </a>
+            <a href="#portofolio" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-slate-200 text-sm font-medium text-slate-700 hover:border-primary hover:text-primary transition-colors">
+            <i class="fa-solid fa-display"></i>
+            <span>Lihat Contoh Website</span>
+            </a>
+        </div>
+
+        <!-- Trust kecil -->
+        <p class="text-xs text-slate-500">
+            Sudah digunakan oleh beberapa pelaku usaha lokal di Lombok untuk menaikkan kepercayaan pelanggan.
+        </p>
+        </div>
+
+        <!-- Ilustrasi / Logo Card -->
+        <div class="lg:pl-8" data-aos="fade-left" data-aos-once="true">
+        <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-primary/10 via-accent/10 to-secondary/10 blur-2xl -z-10"></div>
+
+            <div class="rounded-3xl bg-white border border-slate-200 shadow-xl p-8 flex flex-col items-center justify-center gap-3 text-center">
+            <img 
+                src="img/logo.png" 
+                alt="LombokWeb - Jasa Pembuatan Website di Lombok" 
+                class="w-40 sm:w-48 lg:w-56 object-contain drop-shadow-md"
+            />
+            <h3 class="font-semibold text-slate-800 text-base sm:text-lg">
+                Spesialis Website Bisnis Lokal
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600">
+                UMKM • Travel & Tour • Homestay • Jasa & Rental
+            </p>
+            <div class="bg-green-50 border border-green-200 rounded-lg px-3 py-2 mt-1">
+                <p class="text-[11px] text-green-700 font-medium">
+                <i class="fa-solid fa-star text-yellow-400 mr-1"></i>
+                Fokus melayani bisnis di Lombok
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- Layanan Section dengan Keyword -->
+    <section id="layanan" class="py-12 sm:py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up" data-aos-once="true">
+          <p class="text-xs font-semibold text-primary uppercase tracking-wide">Layanan Kami</p>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-1 mb-3">
+            Jasa Pembuatan Website untuk Semua Jenis Bisnis di Lombok
+          </h2>
+          <p class="text-sm text-slate-600 max-w-xl mx-auto">
+            Dari UMKM kecil hingga travel agency, kami buatkan website yang sesuai kebutuhan dan budget Anda
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Card 1 - UMKM -->
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:border-primary hover:bg-white hover:shadow-md transition-all duration-300"
+               data-aos="fade-up" data-aos-delay="0" data-aos-once="true">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
+              <i class="fa-solid fa-store text-lg"></i>
+            </span>
+            <h3 class="font-semibold text-slate-900 mb-3 text-lg">Website UMKM & Kuliner</h3>
+            <p class="text-sm text-slate-600 mb-4">
+              Perfect untuk warung makan, coffee shop, butik, dan usaha rumahan di Lombok
+            </p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Katalog produk online</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Tombol WhatsApp order</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Google Maps integration</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2 - Travel -->
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:border-primary hover:bg-white hover:shadow-md transition-all duration-300"
+               data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
+              <i class="fa-solid fa-route text-lg"></i>
+            </span>
+            <h3 class="font-semibold text-slate-900 mb-3 text-lg">Website Travel & Tour Lombok</h3>
+            <p class="text-sm text-slate-600 mb-4">
+              Website profesional untuk agen travel, rental mobil, dan paket wisata Lombok
+            </p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Paket wisata Lombok</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Form booking online</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Galeri foto destinasi</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3 - Homestay -->
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:border-primary hover:bg-white hover:shadow-md transition-all duration-300"
+               data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
+              <i class="fa-solid fa-house-chimney text-lg"></i>
+            </span>
+            <h3 class="font-semibold text-slate-900 mb-3 text-lg">Website Homestay & Villa</h3>
+            <p class="text-sm text-slate-600 mb-4">
+              Tampilkan keindahan penginapan Anda dengan website booking yang mudah
+            </p>
+            <ul class="text-sm text-slate-600 space-y-2">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Foto kamar & fasilitas</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Sistem booking WhatsApp</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Testimoni tamu</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portofolio Section -->
+    <section id="portofolio" class="py-12 sm:py-16 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up" data-aos-once="true">
+          <p class="text-xs font-semibold text-primary uppercase tracking-wide">Portofolio</p>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-1 mb-3">
+            Contoh Website yang Telah Kami Buat
+          </h2>
+          <p class="text-sm text-slate-600 max-w-xl mx-auto">
+            Lihat hasil kerja kami untuk berbagai bisnis di Lombok
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Item 1 -->
+          <div class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300" 
+               data-aos="fade-up" data-aos-delay="0" data-aos-once="true">
+            <a href="https://afwatransport.vercel.app/" target="_blank" rel="noopener">
+              <img src="img/portofolio/1.png" 
+                   alt="Website Afwa Transport - Jasa Travel dan Tour di Lombok" 
+                   class="h-48 w-full object-cover">
+            </a>
+            <div class="p-5">
+              <span class="text-xs text-primary font-semibold">Travel & Tour Lombok</span>
+              <h3 class="font-semibold text-slate-900 text-lg mt-1 mb-2">
+                Afwa Transport
+              </h3>
+              <p class="text-sm text-slate-600 mb-4">
+                Website penyedia paket wisata dan transportasi di Lombok
+              </p>
+              <a href="https://bandar-florist.vercel.app/" 
+                 target="_blank" rel="noopener"
+                 class="text-primary hover:underline text-sm font-medium flex items-center gap-1">
+                <i class="fa-solid fa-link"></i> Lihat Website
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300" 
+               data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+            <a href="https://link-demo-project-2.com" target="_blank" rel="noopener">
+              <img src="img/portofolio/2.png" 
+                   alt="Website Bandar Florist - Toko Tanaman dan Dekorasi di Lombok" 
+                   class="h-48 w-full object-cover">
+            </a>
+            <div class="p-5">
+              <span class="text-xs text-secondary font-semibold">UMKM Lombok</span>
+              <h3 class="font-semibold text-slate-900 text-lg mt-1 mb-2">
+                Bandar Florist
+              </h3>
+              <p class="text-sm text-slate-600 mb-4">
+                Website toko tanaman dan dekorasi khas Lombok
+              </p>
+              <a href="https://link-demo-project-2.com" 
+                 target="_blank" rel="noopener"
+                 class="text-primary hover:underline text-sm font-medium flex items-center gap-1">
+                <i class="fa-solid fa-link"></i> Lihat Website
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 3 - Placeholder untuk project baru -->
+          <div class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300" 
+               data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+            <div class="h-48 w-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+              <div class="text-center">
+                <i class="fa-solid fa-plus text-3xl text-primary mb-2"></i>
+                <p class="text-sm text-slate-600">Website Bisnis Anda</p>
+              </div>
+            </div>
+            <div class="p-5">
+              <span class="text-xs text-primary font-semibold">Project Baru</span>
+              <h3 class="font-semibold text-slate-900 text-lg mt-1 mb-2">
+                Bisnis Anda
+              </h3>
+              <p class="text-sm text-slate-600 mb-4">
+                Jadilah project berikutnya dalam portofolio kami
+              </p>
+              <a href="#cta" 
+                 class="text-primary hover:underline text-sm font-medium flex items-center gap-1">
+                <i class="fa-solid fa-rocket"></i> Buat Website Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Harga Section -->
+    <section id="harga" class="py-12 sm:py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up" data-aos-once="true">
+          <p class="text-xs font-semibold text-primary uppercase tracking-wide">Harga</p>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-1 mb-3">
+            Investasi Website untuk Bisnis Anda
+          </h2>
+          <p class="text-sm text-slate-600 max-w-xl mx-auto">
+            Harga transparan, sekali bayar untuk website profesional
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <!-- Paket Basic -->
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 flex flex-col" data-aos="fade-up" data-aos-delay="0" data-aos-once="true">
+            <h3 class="font-semibold text-slate-900 mb-3 text-lg">Starter</h3>
+            <p class="text-sm text-slate-600 mb-4">Cocok untuk profil bisnis sederhana</p>
+            <p class="text-2xl font-bold text-slate-900 mb-2">Rp1,5 Jt</p>
+            <p class="text-xs text-slate-500 mb-6">Sekali bayar</p>
+            <ul class="text-sm text-slate-600 space-y-2 mb-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>1 halaman utama</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Tombol WhatsApp</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Responsif mobile</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Google Maps</span>
+              </li>
+            </ul>
+            <a href="#cta" class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full border border-primary text-primary text-sm font-medium hover:bg-primary hover:text-white transition-colors">
+              <i class="fa-brands fa-whatsapp"></i> Pilih Paket
+            </a>
+          </div>
+
+          <!-- Paket Bisnis -->
+          <div class="rounded-2xl border-2 border-primary bg-white shadow-lg p-6 relative flex flex-col" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+            <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 text-xs px-3 py-1 rounded-full bg-primary text-white font-semibold">
+              Paling Populer
+            </span>
+            <h3 class="font-semibold text-slate-900 mb-3 text-lg">Bisnis</h3>
+            <p class="text-sm text-slate-600 mb-4">Ideal untuk travel & homestay</p>
+            <p class="text-2xl font-bold text-slate-900 mb-2">Rp2,5 Jt</p>
+            <p class="text-xs text-slate-500 mb-6">Sekali bayar</p>
+            <ul class="text-sm text-slate-600 space-y-2 mb-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Hingga 5 halaman</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Form booking</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Galeri foto</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>SEO dasar</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Revisi included</span>
+              </li>
+            </ul>
+            <a href="#cta" class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary text-white text-sm font-medium hover:bg-primary/90 transition-colors">
+              <i class="fa-brands fa-whatsapp"></i> Pilih Paket
+            </a>
+          </div>
+
+          <!-- Paket Custom -->
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 flex flex-col" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
+            <h3 class="font-semibold text-slate-900 mb-3 text-lg">Custom</h3>
+            <p class="text-sm text-slate-600 mb-4">Untuk kebutuhan khusus</p>
+            <p class="text-2xl font-bold text-slate-900 mb-2">Custom</p>
+            <p class="text-xs text-slate-500 mb-6">Harga menyesuaikan</p>
+            <ul class="text-sm text-slate-600 space-y-2 mb-6">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Desain khusus</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Multi bahasa</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-secondary"></i>
+                <span>Fitur tambahan</span>
+              </li>
+            </ul>
+            <a href="#cta" class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full border border-slate-300 text-slate-700 text-sm font-medium hover:border-primary hover:text-primary transition-colors">
+              <i class="fa-brands fa-whatsapp"></i> Konsultasi
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + Kontak Section -->
+    <section id="cta" class="py-12 sm:py-16 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-10 items-center rounded-3xl bg-white border border-slate-100 px-6 sm:px-8 py-8 sm:py-10 shadow-sm">
+          
+          <!-- Teks CTA -->
+          <div data-aos="fade-right" data-aos-once="true">
+            <p class="text-xs font-semibold uppercase tracking-wide text-primary">Mulai Project</p>
+            <h2 class="text-2xl sm:text-3xl font-bold mt-1 mb-4 text-slate-900">
+              Siap Punya Website Profesional?
+            </h2>
+            <p class="text-sm text-slate-600 mb-6">
+              Konsultasi gratis via WhatsApp. Ceritakan bisnis Anda, kami bantu buat website yang tepat untuk bisnis di Lombok.
+            </p>
+
+            <div class="space-y-3 text-sm mb-6">
+              <div class="flex items-center gap-3 text-slate-700">
+                <i class="fa-brands fa-whatsapp text-lg text-green-500"></i>
+                <div>
+                  <p class="font-semibold">+6287892219615</p>
+                  <p class="text-xs text-slate-500">Chat langsung</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 text-slate-700">
+                <i class="fa-solid fa-envelope text-base text-primary"></i>
+                <div>
+                  <p class="font-semibold">lombokweb@gmail.com</p>
+                  <p class="text-xs text-slate-500">Email kami</p>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://wa.me/6287892219615?text=Halo%20LombokWeb%2C%20saya%20ingin%20konsultasi%20pembuatan%20website%20untuk%20bisnis%20saya%20di%20Lombok."
+              target="_blank"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary/90 transition-colors"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Chat WhatsApp Sekarang</span>
+            </a>
+          </div>
+
+          <!-- Form Kontak -->
+          <div id="kontak" class="bg-slate-50 rounded-2xl border border-slate-100 p-5 sm:p-6" data-aos="fade-left" data-aos-once="true">
+            <h3 class="font-semibold text-lg mb-3 text-slate-900">Konsultasi Gratis</h3>
+            <p class="text-xs text-slate-500 mb-4">
+              Isi form singkat, langsung chat ke WhatsApp kami
+            </p>
+
+            <form id="consultationForm" class="space-y-4 text-sm">
+              <!-- Nama Lengkap -->
+              <div>
+                <label for="nama" class="block text-xs mb-1 text-slate-600 font-medium">Nama Lengkap</label>
+                <input
+                  id="nama"
+                  name="nama"
+                  type="text"
+                  required
+                  class="w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+                  placeholder="Nama lengkap Anda"
+                />
+              </div>
+
+              <!-- Nama Usaha -->
+              <div>
+                <label for="usaha" class="block text-xs mb-1 text-slate-600 font-medium">Nama Usaha</label>
+                <input
+                  id="usaha"
+                  name="usaha"
+                  type="text"
+                  required
+                  class="w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+                  placeholder="Nama bisnis Anda"
+                />
+              </div>
+
+              <!-- Jenis Website -->
+              <div>
+                <label for="jenis" class="block text-xs mb-1 text-slate-600 font-medium">Jenis Website</label>
+                <select
+                  id="jenis"
+                  name="jenis"
+                  required
+                  class="w-full rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+                >
+                  <option value="">Pilih jenis website</option>
+                  <option value="UMKM & Kuliner">UMKM & Kuliner</option>
+                  <option value="Travel & Tour">Travel & Tour</option>
+                  <option value="Homestay / Villa">Homestay / Villa</option>
+                  <option value="Lainnya">Lainnya</option>
+                </select>
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-primary text-white font-semibold hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 active:scale-95"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Chat via WhatsApp</span>
+              </button>
+
+              <p class="text-xs text-slate-400 text-center mt-3">
+                Langsung terhubung ke WhatsApp untuk konsultasi
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white pt-10 pb-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <!-- Brand -->
+        <div class="col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <img src="img/logo.png" alt="LombokWeb - Jasa Pembuatan Website Lombok" class="w-9 h-9">
+            <span class="font-semibold text-lg text-slate-900">LombokWeb</span>
+          </div>
+          <p class="text-sm text-slate-600 max-w-xs">
+            Spesialis jasa pembuatan website untuk UMKM, travel, dan homestay di Lombok. 
+            Website profesional dengan harga terjangkau.
+          </p>
+        </div>
+
+        <!-- Navigasi -->
+        <div>
+          <h4 class="font-semibold text-slate-900 mb-3 text-sm">Menu</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#layanan" class="text-slate-600 hover:text-primary transition-colors">Layanan</a></li>
+            <li><a href="#portofolio" class="text-slate-600 hover:text-primary transition-colors">Portofolio</a></li>
+            <li><a href="#harga" class="text-slate-600 hover:text-primary transition-colors">Harga</a></li>
+            <li><a href="#cta" class="text-slate-600 hover:text-primary transition-colors">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak -->
+        <div>
+          <h4 class="font-semibold text-slate-900 mb-3 text-sm">Kontak</h4>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-center gap-2 text-slate-600">
+              <i class="fa-brands fa-whatsapp text-primary"></i>
+              +6287892219615
+            </li>
+            <li class="flex items-center gap-2 text-slate-600">
+              <i class="fa-solid fa-envelope text-primary"></i>
+              lombokweb@gmail.com
+            </li>
+            <li class="flex items-center gap-2 text-slate-600">
+              <i class="fa-solid fa-location-dot text-primary"></i>
+              Lombok, NTB
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="border-t border-slate-200 pt-4 mt-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <p>© <span id="year"></span> LombokWeb - Jasa Pembuatan Website Lombok. All rights reserved.</p>
+        <a href="#hero" class="text-slate-500 hover:text-primary flex items-center gap-1 transition-colors">
+          <i class="fa-solid fa-arrow-up"></i> Kembali ke atas
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="tailwind.config.js"></script>
+  <script type="module" src="main.js"></script>
+
+  <!-- Simple JS + AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    // Tahun otomatis
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Toggle mobile menu
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Init AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-out-quart',
+      disable: window.innerWidth < 768
+    });
+
+    // Tutup mobile menu saat mengklik link
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // WhatsApp Form Handler
+    document.getElementById('consultationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const nama = document.getElementById('nama').value.trim();
+      const usaha = document.getElementById('usaha').value.trim();
+      const jenis = document.getElementById('jenis').value;
+      
+      const message = `Halo LombokWeb, saya ingin konsultasi pembuatan website.
+
+Data Diri:
+• Nama: ${nama}
+• Usaha: ${usaha}
+• Jenis Website: ${jenis}
+
+Bisa dibantu buatkan website untuk bisnis saya di Lombok?`;
+      
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/6287892219615?text=${encodedMessage}`;
+      
+      window.open(whatsappUrl, '_blank');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
