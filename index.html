@@ -10,27 +10,50 @@
   <meta name="keywords" content="jasa pembuatan website lombok, website lombok, pembuatan website umkm lombok, website travel lombok, homestay website lombok, toko online lombok, seo lombok" />
   <meta name="author" content="LombokWeb" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://lombokweb.com" />
-  
+  <link rel="canonical" href="https://lombokweb.site" />
+
+  <!-- PWA / Browser color (kecil tapi bantu best practice) -->
+  <meta name="theme-color" content="#ffffff" />
+
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="LombokWeb — Jasa Pembuatan Website Profesional untuk UMKM & Wisata Lombok" />
   <meta property="og:description" content="Spesialis pembuatan website untuk bisnis lokal di Lombok. Desain modern, cepat, dan terintegrasi WhatsApp." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://lombokweb.com" />
-  <meta property="og:image" content="https://lombokweb.com/img/logo.png" />
+  <meta property="og:url" content="https://lombokweb.site" />
+  <meta property="og:image" content="https://lombokweb.site/img/logo.png" />
   <meta property="og:site_name" content="LombokWeb" />
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="LombokWeb — Jasa Website Profesional untuk UMKM Lombok" />
   <meta name="twitter:description" content="Buat website bisnis Anda di Lombok dengan harga terjangkau. Sudah termasuk domain, hosting, dan support." />
-  <meta name="twitter:image" content="https://lombokweb.com/img/logo.png" />
+  <meta name="twitter:image" content="https://lombokweb.site/img/logo.png" />
 
- <!-- Preconnect for Performance -->
+  <!-- Schema.org LocalBusiness (bantu skor SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "LombokWeb",
+    "image": "https://lombokweb.site/img/logo.png",
+    "url": "https://lombokweb.site",
+    "telephone": "+6287892219615",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lombok",
+      "addressRegion": "Nusa Tenggara Barat",
+      "addressCountry": "ID"
+    },
+    "priceRange": "$$",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts (non-blocking dengan display=swap) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Preload main CSS (Tailwind output) -->
@@ -40,11 +63,13 @@
   <!-- Font Awesome (non-blocking using defer JS) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" defer></script>
 
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- AOS CSS: load non-blocking -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  </noscript>
 
   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-
 </head>
 
 <body class="bg-slate-50 text-dark overflow-x-hidden">
@@ -54,7 +79,7 @@
       <!-- Logo & Brand -->
       <a href="#hero" class="flex items-center gap-2">
         <span class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-white overflow-hidden">
-          <img src="img/logo.png" alt="LombokWeb Logo - Jasa Pembuatan Website Lombok" class="w-full h-full object-contain">
+          <img src="img/logo.png" alt="LombokWeb Logo - Jasa Pembuatan Website Lombok" class="w-full h-full object-contain" width="36" height="36">
         </span>
         <div class="leading-tight">
           <span class="font-semibold text-lg">LombokWeb</span>
@@ -68,14 +93,14 @@
         <a href="#portofolio" class="text-slate-600 hover:text-primary transition-colors">Portofolio</a>
         <a href="#harga" class="text-slate-600 hover:text-primary transition-colors">Harga</a>
         <a href="#cta" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-white shadow-sm hover:bg-primary/90 transition-colors">
-          <i class="fa-brands fa-whatsapp text-base"></i>
+          <i class="fa-brands fa-whatsapp text-base" aria-hidden="true"></i>
           <span>Konsultasi</span>
         </a>
       </nav>
 
       <!-- Mobile Menu Button -->
       <button id="mobileMenuBtn" aria-label="Buka menu navigasi" class="md:hidden inline-flex items-center justify-center w-9 h-9 rounded-lg border border-slate-300 text-slate-700 transition-colors">
-        <i class="fa-solid fa-bars text-lg"></i>
+        <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
       </button>
     </div>
 
@@ -86,7 +111,7 @@
         <a href="#portofolio" class="py-2 text-slate-700 hover:text-primary transition-colors">Portofolio</a>
         <a href="#harga" class="py-2 text-slate-700 hover:text-primary transition-colors">Harga</a>
         <a href="#cta" class="mt-2 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-primary text-white shadow-sm hover:bg-primary/90 transition-colors">
-          <i class="fa-brands fa-whatsapp text-base"></i>
+          <i class="fa-brands fa-whatsapp text-base" aria-hidden="true"></i>
           <span>Konsultasi</span>
         </a>
       </div>
@@ -94,97 +119,97 @@
   </header>
 
   <main class="pt-10">
-    <!-- Hero Section dengan SEO yang Tetap Kuat tapi Lebih Minimal -->
+    <!-- Hero Section -->
     <section id="hero" class="py-10 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-blue-50/30">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
         
         <!-- Teks Utama -->
         <div data-aos="fade-right" data-aos-once="true">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
-            <i class="fa-solid fa-map-location-dot"></i>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
+            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
             <span>Jasa Pembuatan Website di Lombok</span>
-        </div>
+          </div>
 
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-4">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-4">
             Jasa Pembuatan Website Lombok<br class="hidden sm:block" />
             untuk UMKM & Wisata.
-        </h1>
+          </h1>
 
-        <p class="text-sm sm:text-base text-slate-600 mb-4">
+          <p class="text-sm sm:text-base text-slate-600 mb-4">
             <strong>LombokWeb</strong> membantu bisnis lokal di Lombok punya website yang rapi, mudah diakses,
             dan langsung terhubung ke WhatsApp. Cocok untuk <strong>UMKM, travel, homestay, villa, coffee shop</strong>, dan usaha jasa.
-        </p>
+          </p>
 
-        <p class="text-sm sm:text-base text-slate-700 mb-5">
+          <p class="text-sm sm:text-base text-slate-700 mb-5">
             Mulai dari <strong>Rp1,5 juta</strong> untuk website profesional yang siap dipakai jangka panjang.
-        </p>
+          </p>
 
-        <!-- USP singkat -->
-        <div class="flex flex-wrap gap-2 mb-6 text-[11px] sm:text-xs">
+          <!-- USP singkat -->
+          <div class="flex flex-wrap gap-2 mb-6 text-[11px] sm:text-xs">
             <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700">
-            <i class="fa-solid fa-mobile-screen text-primary"></i>
-            <span>Mobile friendly</span>
+              <i class="fa-solid fa-mobile-screen text-primary" aria-hidden="true"></i>
+              <span>Mobile friendly</span>
             </span>
             <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700">
-            <i class="fa-brands fa-whatsapp text-green-500"></i>
-            <span>Terhubung ke WhatsApp</span>
+              <i class="fa-brands fa-whatsapp text-green-500" aria-hidden="true"></i>
+              <span>Terhubung ke WhatsApp</span>
             </span>
             <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700">
-            <i class="fa-solid fa-magnifying-glass text-primary"></i>
-            <span>Siap untuk Google</span>
+              <i class="fa-solid fa-magnifying-glass text-primary" aria-hidden="true"></i>
+              <span>Siap untuk Google</span>
             </span>
-        </div>
+          </div>
 
-        <!-- CTA -->
-        <div class="flex flex-wrap items-center gap-3 mb-5">
+          <!-- CTA -->
+          <div class="flex flex-wrap items-center gap-3 mb-5">
             <a href="#cta" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-white text-sm font-medium shadow-lg hover:bg-primary/90 transition-all duration-300">
-            <i class="fa-brands fa-whatsapp text-lg"></i>
-            <span>Konsultasi Gratis via WA</span>
+              <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
+              <span>Konsultasi Gratis via WA</span>
             </a>
             <a href="#portofolio" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-slate-200 text-sm font-medium text-slate-700 hover:border-primary hover:text-primary transition-colors">
-            <i class="fa-solid fa-display"></i>
-            <span>Lihat Contoh Website</span>
+              <i class="fa-solid fa-display" aria-hidden="true"></i>
+              <span>Lihat Contoh Website</span>
             </a>
-        </div>
+          </div>
 
-        <!-- Trust kecil -->
-        <p class="text-xs text-slate-500">
+          <!-- Trust kecil -->
+          <p class="text-xs text-slate-500">
             Sudah digunakan oleh beberapa pelaku usaha lokal di Lombok untuk menaikkan kepercayaan pelanggan.
-        </p>
+          </p>
         </div>
 
         <!-- Ilustrasi / Logo Card -->
         <div class="lg:pl-8" data-aos="fade-left" data-aos-once="true">
-        <div class="relative">
+          <div class="relative">
             <div class="absolute -inset-4 bg-gradient-to-tr from-primary/10 via-accent/10 to-secondary/10 blur-2xl -z-10"></div>
 
             <div class="rounded-3xl bg-white border border-slate-200 shadow-xl p-8 flex flex-col items-center justify-center gap-3 text-center">
-            <img 
+              <img 
                 src="img/logo.png" 
-                alt="LombokWeb - Jasa Pembuatan Website di Lombok" 
+                alt="Logo LombokWeb - Layanan pembuatan website di Lombok" 
                 class="w-40 sm:w-48 lg:w-56 object-contain drop-shadow-md"
-            />
-            <h3 class="font-semibold text-slate-800 text-base sm:text-lg">
+                width="224" height="224"
+              />
+              <h3 class="font-semibold text-slate-800 text-base sm:text-lg">
                 Spesialis Website Bisnis Lokal
-            </h3>
-            <p class="text-xs sm:text-sm text-slate-600">
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600">
                 UMKM • Travel & Tour • Homestay • Jasa & Rental
-            </p>
-            <div class="bg-green-50 border border-green-200 rounded-lg px-3 py-2 mt-1">
+              </p>
+              <div class="bg-green-50 border border-green-200 rounded-lg px-3 py-2 mt-1">
                 <p class="text-[11px] text-green-700 font-medium">
-                <i class="fa-solid fa-star text-yellow-400 mr-1"></i>
-                Fokus melayani bisnis di Lombok
+                  <i class="fa-solid fa-star text-yellow-400 mr-1" aria-hidden="true"></i>
+                  Fokus melayani bisnis di Lombok
                 </p>
+              </div>
             </div>
-            </div>
-        </div>
+          </div>
         </div>
 
-    </div>
+      </div>
     </section>
 
-
-    <!-- Layanan Section dengan Keyword -->
+    <!-- Layanan Section -->
     <section id="layanan" class="py-12 sm:py-16 bg-white">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12" data-aos="fade-up" data-aos-once="true">
@@ -202,7 +227,7 @@
           <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:border-primary hover:bg-white hover:shadow-md transition-all duration-300"
                data-aos="fade-up" data-aos-delay="0" data-aos-once="true">
             <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
-              <i class="fa-solid fa-store text-lg"></i>
+              <i class="fa-solid fa-store text-lg" aria-hidden="true"></i>
             </span>
             <h3 class="font-semibold text-slate-900 mb-3 text-lg">Website UMKM & Kuliner</h3>
             <p class="text-sm text-slate-600 mb-4">
@@ -210,16 +235,16 @@
             </p>
             <ul class="text-sm text-slate-600 space-y-2">
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Katalog produk online</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Tombol WhatsApp order</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
-                <span>Google Maps integration</span>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
+                <span>Integrasi Google Maps</span>
               </li>
             </ul>
           </div>
@@ -228,7 +253,7 @@
           <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:border-primary hover:bg-white hover:shadow-md transition-all duration-300"
                data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
-              <i class="fa-solid fa-route text-lg"></i>
+              <i class="fa-solid fa-route text-lg" aria-hidden="true"></i>
             </span>
             <h3 class="font-semibold text-slate-900 mb-3 text-lg">Website Travel & Tour Lombok</h3>
             <p class="text-sm text-slate-600 mb-4">
@@ -236,15 +261,15 @@
             </p>
             <ul class="text-sm text-slate-600 space-y-2">
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
-                <span>Paket wisata Lombok</span>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
+                <span>Daftar paket wisata Lombok</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Form booking online</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Galeri foto destinasi</span>
               </li>
             </ul>
@@ -254,7 +279,7 @@
           <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 hover:border-primary hover:bg-white hover:shadow-md transition-all duration-300"
                data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
             <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-4">
-              <i class="fa-solid fa-house-chimney text-lg"></i>
+              <i class="fa-solid fa-house-chimney text-lg" aria-hidden="true"></i>
             </span>
             <h3 class="font-semibold text-slate-900 mb-3 text-lg">Website Homestay & Villa</h3>
             <p class="text-sm text-slate-600 mb-4">
@@ -262,15 +287,15 @@
             </p>
             <ul class="text-sm text-slate-600 space-y-2">
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Foto kamar & fasilitas</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
-                <span>Sistem booking WhatsApp</span>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
+                <span>Sistem booking via WhatsApp</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Testimoni tamu</span>
               </li>
             </ul>
@@ -296,10 +321,11 @@
           <!-- Item 1 -->
           <div class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300" 
                data-aos="fade-up" data-aos-delay="0" data-aos-once="true">
-            <a href="https://afwatransport.vercel.app/" target="_blank" rel="noopener">
+            <a href="https://afwatransport.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src="img/portofolio/1.jpeg" 
-                   alt="Website Afwa Transport - Jasa Travel dan Tour di Lombok" 
-                   class="h-48 w-full object-cover">
+                   alt="Website Afwa Transport - Jasa travel dan tour di Lombok" 
+                   class="h-48 w-full object-cover"
+                   loading="lazy" decoding="async">
             </a>
             <div class="p-5">
               <span class="text-xs text-primary font-semibold">Travel & Tour Lombok</span>
@@ -310,9 +336,9 @@
                 Website penyedia paket wisata dan transportasi di Lombok
               </p>
               <a href="https://afwatransport.vercel.app/" 
-                 target="_blank" rel="noopener"
+                 target="_blank" rel="noopener noreferrer"
                  class="text-primary hover:underline text-sm font-medium flex items-center gap-1">
-                <i class="fa-solid fa-link"></i> Lihat Website
+                <i class="fa-solid fa-link" aria-hidden="true"></i> Lihat Website
               </a>
             </div>
           </div>
@@ -320,10 +346,11 @@
           <!-- Item 2 -->
           <div class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300" 
                data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-            <a href="bandar-florist.vercel.app/" target="_blank" rel="noopener">
+            <a href="https://bandar-florist.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src="img/portofolio/2.jpeg" 
-                   alt="Website Bandar Florist - Toko Tanaman dan Dekorasi di Lombok" 
-                   class="h-48 w-full object-cover">
+                   alt="Website Bandar Florist - Toko tanaman dan dekorasi di Lombok" 
+                   class="h-48 w-full object-cover"
+                   loading="lazy" decoding="async">
             </a>
             <div class="p-5">
               <span class="text-xs text-secondary font-semibold">UMKM Lombok</span>
@@ -333,20 +360,20 @@
               <p class="text-sm text-slate-600 mb-4">
                 Website toko tanaman dan dekorasi khas Lombok
               </p>
-              <a href="https://link-demo-project-2.com" 
-                 target="_blank" rel="noopener"
+              <a href="https://bandar-florist.vercel.app/" 
+                 target="_blank" rel="noopener noreferrer"
                  class="text-primary hover:underline text-sm font-medium flex items-center gap-1">
-                <i class="fa-solid fa-link"></i> Lihat Website
+                <i class="fa-solid fa-link" aria-hidden="true"></i> Lihat Website
               </a>
             </div>
           </div>
 
-          <!-- Item 3 - Placeholder untuk project baru -->
+          <!-- Item 3 - Placeholder -->
           <div class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300" 
                data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
             <div class="h-48 w-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
               <div class="text-center">
-                <i class="fa-solid fa-plus text-3xl text-primary mb-2"></i>
+                <i class="fa-solid fa-plus text-3xl text-primary mb-2" aria-hidden="true"></i>
                 <p class="text-sm text-slate-600">Website Bisnis Anda</p>
               </div>
             </div>
@@ -360,7 +387,7 @@
               </p>
               <a href="#cta" 
                  class="text-primary hover:underline text-sm font-medium flex items-center gap-1">
-                <i class="fa-solid fa-rocket"></i> Buat Website Sekarang
+                <i class="fa-solid fa-rocket" aria-hidden="true"></i> Buat Website Sekarang
               </a>
             </div>
           </div>
@@ -390,24 +417,24 @@
             <p class="text-xs text-slate-500 mb-6">Sekali bayar</p>
             <ul class="text-sm text-slate-600 space-y-2 mb-6">
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>1 halaman utama</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Tombol WhatsApp</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Responsif mobile</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Google Maps</span>
               </li>
             </ul>
             <a href="#cta" class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full border border-primary text-primary text-sm font-medium hover:bg-primary hover:text-white transition-colors">
-              <i class="fa-brands fa-whatsapp"></i> Pilih Paket
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pilih Paket
             </a>
           </div>
 
@@ -422,28 +449,28 @@
             <p class="text-xs text-slate-500 mb-6">Sekali bayar</p>
             <ul class="text-sm text-slate-600 space-y-2 mb-6">
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Hingga 5 halaman</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Form booking</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Galeri foto</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>SEO dasar</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Revisi included</span>
               </li>
             </ul>
             <a href="#cta" class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary text-white text-sm font-medium hover:bg-primary/90 transition-colors">
-              <i class="fa-brands fa-whatsapp"></i> Pilih Paket
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Pilih Paket
             </a>
           </div>
 
@@ -455,20 +482,20 @@
             <p class="text-xs text-slate-500 mb-6">Harga menyesuaikan</p>
             <ul class="text-sm text-slate-600 space-y-2 mb-6">
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Desain khusus</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Multi bahasa</span>
               </li>
               <li class="flex items-center gap-2">
-                <i class="fa-solid fa-check text-secondary"></i>
+                <i class="fa-solid fa-check text-secondary" aria-hidden="true"></i>
                 <span>Fitur tambahan</span>
               </li>
             </ul>
             <a href="#cta" class="mt-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full border border-slate-300 text-slate-700 text-sm font-medium hover:border-primary hover:text-primary transition-colors">
-              <i class="fa-brands fa-whatsapp"></i> Konsultasi
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Konsultasi
             </a>
           </div>
         </div>
@@ -492,14 +519,14 @@
 
             <div class="space-y-3 text-sm mb-6">
               <div class="flex items-center gap-3 text-slate-700">
-                <i class="fa-brands fa-whatsapp text-lg text-green-500"></i>
+                <i class="fa-brands fa-whatsapp text-lg text-green-500" aria-hidden="true"></i>
                 <div>
                   <p class="font-semibold">+6287892219615</p>
                   <p class="text-xs text-slate-500">Chat langsung</p>
                 </div>
               </div>
               <div class="flex items-center gap-3 text-slate-700">
-                <i class="fa-solid fa-envelope text-base text-primary"></i>
+                <i class="fa-solid fa-envelope text-base text-primary" aria-hidden="true"></i>
                 <div>
                   <p class="font-semibold">lombokweb@gmail.com</p>
                   <p class="text-xs text-slate-500">Email kami</p>
@@ -509,10 +536,10 @@
 
             <a
               href="https://wa.me/6287892219615?text=Halo%20LombokWeb%2C%20saya%20ingin%20konsultasi%20pembuatan%20website%20untuk%20bisnis%20saya%20di%20Lombok."
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary/90 transition-colors"
             >
-              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
               <span>Chat WhatsApp Sekarang</span>
             </a>
           </div>
@@ -573,7 +600,7 @@
                 type="submit"
                 class="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-primary text-white font-semibold hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 active:scale-95"
               >
-                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                 <span>Chat via WhatsApp</span>
               </button>
 
@@ -594,7 +621,7 @@
         <!-- Brand -->
         <div class="col-span-2">
           <div class="flex items-center gap-2 mb-3">
-            <img src="img/logo.png" alt="LombokWeb - Jasa Pembuatan Website Lombok" class="w-9 h-9">
+            <img src="img/logo.png" alt="LombokWeb - Jasa Pembuatan Website Lombok" class="w-9 h-9" loading="lazy" decoding="async">
             <span class="font-semibold text-lg text-slate-900">LombokWeb</span>
           </div>
           <p class="text-sm text-slate-600 max-w-xs">
@@ -619,15 +646,15 @@
           <h4 class="font-semibold text-slate-900 mb-3 text-sm">Kontak</h4>
           <ul class="space-y-2 text-sm">
             <li class="flex items-center gap-2 text-slate-600">
-              <i class="fa-brands fa-whatsapp text-primary"></i>
+              <i class="fa-brands fa-whatsapp text-primary" aria-hidden="true"></i>
               +6287892219615
             </li>
             <li class="flex items-center gap-2 text-slate-600">
-              <i class="fa-solid fa-envelope text-primary"></i>
+              <i class="fa-solid fa-envelope text-primary" aria-hidden="true"></i>
               lombokweb@gmail.com
             </li>
             <li class="flex items-center gap-2 text-slate-600">
-              <i class="fa-solid fa-location-dot text-primary"></i>
+              <i class="fa-solid fa-location-dot text-primary" aria-hidden="true"></i>
               Lombok, NTB
             </li>
           </ul>
@@ -638,15 +665,16 @@
       <div class="border-t border-slate-200 pt-4 mt-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-500">
         <p>© <span id="year"></span> LombokWeb - Jasa Pembuatan Website Lombok. All rights reserved.</p>
         <a href="#hero" class="text-slate-500 hover:text-primary flex items-center gap-1 transition-colors">
-          <i class="fa-solid fa-arrow-up"></i> Kembali ke atas
+          <i class="fa-solid fa-arrow-up" aria-hidden="true"></i> Kembali ke atas
         </a>
       </div>
     </div>
   </footer>
 
+  <!-- Main JS -->
   <script type="module" src="main.js"></script>
 
-  <!-- Simple JS + AOS -->
+  <!-- AOS JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     // Tahun otomatis
