@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow halaman yang tidak perlu di-index
+Disallow: /admin/
+Disallow: /login/
+Disallow: /wp-admin/
+
+# Sitemap
+Sitemap: https://www.lombokweb.site/sitemap.xml
