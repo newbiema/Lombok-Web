@@ -49,19 +49,41 @@
   }
   </script>
 
-  <!-- Preconnect for Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Preconnect for Performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Google Fonts (non-blocking dengan display=swap) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Google Fonts - non render blocking -->
+<link
+  rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</noscript>
+
 
   <!-- Preload main CSS (Tailwind output) -->
   <link rel="preload" href="/css/output.css" as="style">
   <link rel="stylesheet" href="/css/output.css">
 
-  <!-- Font Awesome (non-blocking using defer JS) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" defer></script>
+<!-- Font Awesome Icons (CSS, non render-blocking) -->
+<link
+  rel="preload"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</noscript>
+
 
   <!-- AOS CSS: load non-blocking -->
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">

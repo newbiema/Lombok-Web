@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import 'aos/dist/aos.css';
-@import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 @theme {
   /* Pastikan nilai di sini sama dengan yang Anda inginkan sebelumnya */
