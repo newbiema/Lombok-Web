@@ -41,13 +41,6 @@
       background: #a1a1a1;
     }
 
-    /* Animasi fade in untuk mobile */
-    @media (max-width: 768px) {
-      [data-aos] {
-        opacity: 1 !important;
-        transform: none !important;
-      }
-    }
 
     /* Gradient text untuk emphasis */
     .gradient-text {
