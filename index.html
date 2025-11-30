@@ -118,7 +118,7 @@
       <!-- Logo & Brand -->
       <a href="#hero" class="flex items-center gap-2">
         <span class="inline-flex items-center justify-center w-9 h-9 rounded-xl text-white overflow-hidden">
-          <img src="img/logo.png" alt="LombokWeb Logo - Jasa Pembuatan Website Lombok" class="w-full h-full object-contain" width="36" height="36">
+          <img src="img/logo.png" alt="LombokWeb Logo - Jasa Pembuatan Website Lombok" width="500" height="500" class="w-full h-full object-contain" width="36" height="36">
         </span>
         <div class="leading-tight">
           <span class="font-semibold text-lg text-primary">LombokWeb</span>
@@ -170,9 +170,12 @@
         <!-- IMAGE FIRST ON MOBILE -->
         <div class="relative order-first lg:order-last flex justify-center" data-aos="zoom-in" data-aos-delay="150">
           <img 
-            src="img/hero.webp" 
+            src="img/hero.webp"
+            width="3000"
+            height="2000"
             alt="Layanan Pembuatan Website Lombok" 
-            class="rounded-2xl shadow-lg w-full max-w-md responsive-img max-h-[420px] object-cover" 
+            class="rounded-2xl shadow-lg w-full max-w-md responsive-img max-h-[420px] object-cover"
+            
           />
 
           <!-- Small Floating Card (hidden on very small screens) -->
@@ -509,6 +512,8 @@
                 data-aos="fade-up" data-aos-delay="0" data-aos-once="true">
               <a href="https://afwatransport.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <img src="img/portofolio/1.webp"
+                    width="1200"
+                    height="458"
                     alt="Website Afwa Transport - Jasa travel dan tour di Lombok"
                     class="h-48 w-full object-cover"
                     loading="lazy">
@@ -532,6 +537,8 @@
                 data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
               <a href="https://bandar-florist.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <img src="img/portofolio/2.webp"
+                    width="1200"
+                    height="592"
                     alt="Website Bandar Florist - Toko tanaman di Lombok"
                     class="h-48 w-full object-cover"
                     loading="lazy">
@@ -834,7 +841,7 @@
           <!-- Brand + Sosmed + Map -->
           <div class="col-span-2">
             <div class="flex items-center gap-2 mb-3">
-              <img src="img/logo.png" alt="LombokWeb - Jasa Pembuatan Website Lombok" class="w-9 h-9" loading="lazy" decoding="async">
+              <img src="img/logo.png" alt="LombokWeb - Jasa Pembuatan Website Lombok" width="500" height="500" class="w-9 h-9" loading="lazy" decoding="async">
               <span class="font-semibold text-primary text-lg">LombokWeb</span>
             </div>
 
@@ -924,7 +931,13 @@
     </footer>
 
   <!-- AOS JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+    defer>
+  </script>
+
   <script>
     // Tahun otomatis
     document.getElementById('year').textContent = new Date().getFullYear();
