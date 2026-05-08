@@ -3,6 +3,7 @@
     "@fortawesome/fontawesome-free": "^7.1.0",
     "@tailwindcss/cli": "^4.1.17",
     "aos": "^2.3.4",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.1.17"
   }
 }
