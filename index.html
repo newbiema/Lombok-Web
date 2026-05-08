@@ -1373,20 +1373,23 @@
       // Toggle mobile menu
       const mobileBtn = document.getElementById("mobileMenuBtn");
       const mobileMenu = document.getElementById("mobileMenu");
+
       if (mobileBtn && mobileMenu) {
         mobileBtn.addEventListener("click", () => {
           mobileMenu.classList.toggle("hidden");
         });
       }
 
-      // Init AOS
-      AOS.init({
-        duration: 800,
-        once: true,
-        easing: "ease-out-quart",
-      });
+      // Init AOS hanya desktop/tablet
+      if (window.innerWidth > 768) {
+        AOS.init({
+          duration: 800,
+          once: true,
+          easing: "ease-out-quart",
+        });
+      }
 
-      // Tutup mobile menu saat mengklik link
+      // Tutup mobile menu saat klik link
       document.querySelectorAll("#mobileMenu a").forEach((link) => {
         link.addEventListener("click", () => {
           mobileMenu.classList.add("hidden");
@@ -1394,9 +1397,10 @@
       });
 
       // WhatsApp Form Handler
-      document
-        .getElementById("consultationForm")
-        .addEventListener("submit", function (e) {
+      const consultationForm = document.getElementById("consultationForm");
+
+      if (consultationForm) {
+        consultationForm.addEventListener("submit", function (e) {
           e.preventDefault();
 
           const nama = document.getElementById("nama").value.trim();
@@ -1405,19 +1409,22 @@
 
           const message = `Halo LombokWeb, saya ingin konsultasi pembuatan website.
 
-Data Diri:
-• Nama: ${nama}
-• Usaha: ${usaha}
-• Jenis Website: ${jenis}
+    Data Diri:
+    • Nama: ${nama}
+    • Usaha: ${usaha}
+    • Jenis Website: ${jenis}
 
-Bisa dibantu buatkan website untuk bisnis saya di Lombok?`;
+    Bisa dibantu buatkan website untuk bisnis saya di Lombok?`;
 
           const encodedMessage = encodeURIComponent(message);
+
           const whatsappUrl = `https://wa.me/6288975555215?text=${encodedMessage}`;
 
           window.open(whatsappUrl, "_blank");
+
           this.reset();
         });
+      }
     </script>
   </body>
 </html>
