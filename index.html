@@ -1380,12 +1380,18 @@
         });
       }
 
-      // Init AOS hanya desktop/tablet
-      if (window.innerWidth > 768) {
+      // Init AOS. Jika CDN AOS gagal dimuat, tampilkan konten normal.
+      if (window.AOS) {
         AOS.init({
           duration: 800,
           once: true,
           easing: "ease-out-quart",
+        });
+      } else {
+        document.querySelectorAll("[data-aos]").forEach((element) => {
+          element.removeAttribute("data-aos");
+          element.removeAttribute("data-aos-delay");
+          element.removeAttribute("data-aos-once");
         });
       }
 
