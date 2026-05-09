@@ -232,6 +232,9 @@
   .sticky {
     position: sticky;
   }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
   .inset-x-0 {
     inset-inline: calc(var(--spacing) * 0);
   }
@@ -244,11 +247,17 @@
   .-bottom-4 {
     bottom: calc(var(--spacing) * -4);
   }
+  .bottom-3 {
+    bottom: calc(var(--spacing) * 3);
+  }
   .-left-2 {
     left: calc(var(--spacing) * -2);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .left-3 {
+    left: calc(var(--spacing) * 3);
   }
   .z-10 {
     z-index: 10;
@@ -379,6 +388,9 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
@@ -402,6 +414,9 @@
   }
   .max-w-xs {
     max-width: var(--container-xs);
+  }
+  .shrink-0 {
+    flex-shrink: 0;
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
@@ -691,6 +706,9 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
@@ -1309,6 +1327,15 @@ html {
     opacity: 1;
     transform: none;
   }
+}
+.map-preview-fallback {
+  display: none;
+}
+.map-preview--fallback img, .map-preview--fallback > a > span:last-child {
+  display: none;
+}
+.map-preview--fallback .map-preview-fallback {
+  display: flex;
 }
 .article-content {
   line-height: 1.7;

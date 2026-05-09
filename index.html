@@ -1243,20 +1243,66 @@
                 Lokasi Kami
               </h4>
               <div
-                class="w-full h-40 rounded-xl overflow-hidden border border-slate-200"
+                class="map-preview relative w-full h-40 rounded-xl overflow-hidden border border-slate-200 bg-slate-50"
               >
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3945.3831763846347!2d116.427306!3d-8.5591031!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc35113955fcc1%3A0x83cc18032773a530!2sLombokWeb%20%E2%80%93%20Jasa%20Pembuatan%20Website%20Lombok!5e0!3m2!1sid!2sid!4v1764358599451!5m2!1sid!2sid"
-                  width="100%"
-                  height="100%"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  title="Lokasi LombokWeb di Lombok"
-                  aria-label="Peta lokasi LombokWeb di Google Maps"
+                <a
+                  href="https://www.google.com/maps/place/LombokWeb+%E2%80%93+Jasa+Pembuatan+Website+Lombok/@-8.5591031,116.427306,17z/data=!4m6!3m5!1s0x2dcc35113955fcc1:0x83cc18032773a530!8m2!3d-8.5591031!4d116.427306!16s%2Fg%2F11mrqc3vg6?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="block h-full w-full"
+                  aria-label="Buka lokasi LombokWeb di Google Maps"
                 >
-                </iframe>
+                  <img
+                    src="img/maps_preview.png"
+                    alt="Preview lokasi LombokWeb di Google Maps"
+                    width="640"
+                    height="320"
+                    loading="lazy"
+                    decoding="async"
+                    class="h-full w-full object-cover"
+                    onerror="this.closest('.map-preview').classList.add('map-preview--fallback')"
+                  />
+                  <div
+                    class="map-preview-fallback absolute inset-0 flex flex-col justify-center gap-3 px-4 py-5"
+                  >
+                    <div class="flex items-start gap-3">
+                      <span
+                        class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary"
+                      >
+                        <i
+                          class="fa-solid fa-location-dot"
+                          aria-hidden="true"
+                        ></i>
+                      </span>
+                      <div>
+                        <p class="text-sm font-semibold text-slate-900">
+                          LombokWeb
+                        </p>
+                        <p class="text-xs leading-relaxed text-slate-500">
+                          Lombok, Nusa Tenggara Barat
+                        </p>
+                      </div>
+                    </div>
+                    <span
+                      class="inline-flex w-fit items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-700"
+                    >
+                      <i
+                        class="fa-solid fa-map-location-dot"
+                        aria-hidden="true"
+                      ></i>
+                      <span>Buka Google Maps</span>
+                    </span>
+                  </div>
+                  <span
+                    class="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-slate-800 shadow-sm backdrop-blur"
+                  >
+                    <i
+                      class="fa-solid fa-map-location-dot text-primary"
+                      aria-hidden="true"
+                    ></i>
+                    Buka Google Maps
+                  </span>
+                </a>
               </div>
             </div>
           </div>
