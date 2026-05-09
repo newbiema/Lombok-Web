@@ -137,22 +137,6 @@
       />
     </noscript>
 
-    <!-- AOS CSS: load non-blocking -->
-    <link
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      />
-    </noscript>
   </head>
   <body class="bg-slate-50 text-dark overflow-x-hidden">
     <!-- Navbar -->
@@ -1360,12 +1344,6 @@
       </div>
     </footer>
 
-    <!-- AOS JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script>
       // Tahun otomatis
       document.getElementById("year").textContent = new Date().getFullYear();
@@ -1377,21 +1355,6 @@
       if (mobileBtn && mobileMenu) {
         mobileBtn.addEventListener("click", () => {
           mobileMenu.classList.toggle("hidden");
-        });
-      }
-
-      // Init AOS. Jika CDN AOS gagal dimuat, tampilkan konten normal.
-      if (window.AOS) {
-        AOS.init({
-          duration: 800,
-          once: true,
-          easing: "ease-out-quart",
-        });
-      } else {
-        document.querySelectorAll("[data-aos]").forEach((element) => {
-          element.removeAttribute("data-aos");
-          element.removeAttribute("data-aos-delay");
-          element.removeAttribute("data-aos-once");
         });
       }
 

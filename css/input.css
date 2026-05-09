@@ -51,6 +51,84 @@
     }
 
 
+    /* Lightweight replacement for AOS: compositor-only animations */
+    [data-aos] {
+      animation-duration: 600ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      animation-fill-mode: both;
+      will-change: opacity, transform;
+    }
+
+    [data-aos="fade-up"] {
+      animation-name: lw-fade-up;
+    }
+
+    [data-aos="fade-right"] {
+      animation-name: lw-fade-right;
+    }
+
+    [data-aos="zoom-in"] {
+      animation-name: lw-zoom-in;
+    }
+
+    [data-aos-delay="100"] {
+      animation-delay: 100ms;
+    }
+
+    [data-aos-delay="150"] {
+      animation-delay: 150ms;
+    }
+
+    [data-aos-delay="200"] {
+      animation-delay: 200ms;
+    }
+
+    [data-aos-delay="350"] {
+      animation-delay: 350ms;
+    }
+
+    @keyframes lw-fade-up {
+      from {
+        opacity: 0;
+        transform: translate3d(0, 18px, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    @keyframes lw-fade-right {
+      from {
+        opacity: 0;
+        transform: translate3d(-18px, 0, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    @keyframes lw-zoom-in {
+      from {
+        opacity: 0;
+        transform: scale3d(0.97, 0.97, 1);
+      }
+      to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      [data-aos] {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+
     /* Article styling */
     .article-content {
       line-height: 1.7;
