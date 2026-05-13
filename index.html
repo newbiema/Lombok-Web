@@ -95,47 +95,17 @@
       }
     </script>
 
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Google Fonts - non render blocking -->
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      />
-    </noscript>
+    <!-- Local Fonts -->
+    <link rel="preload" href="/css/fonts.css" as="style" />
+    <link rel="stylesheet" href="/css/fonts.css" />
 
     <!-- Preload main CSS (Tailwind output) -->
     <link rel="preload" href="/css/output.css" as="style" />
     <link rel="stylesheet" href="/css/output.css" />
 
-    <!-- Font Awesome Icons (CSS, non render-blocking) -->
-    <link
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      />
-    </noscript>
+    <!-- Local Font Awesome Icons -->
+    <link rel="preload" href="/css/fontawesome.min.css" as="style" />
+    <link rel="stylesheet" href="/css/fontawesome.min.css" />
 
   </head>
   <body class="bg-slate-50 text-dark overflow-x-hidden">
