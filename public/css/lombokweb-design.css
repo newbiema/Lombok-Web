@@ -1932,3 +1932,101 @@ p { font-size:15px; font-weight:400; line-height:1.65; }
 .btn,.nav-cta,.mobile-nav-cta { font-weight:500; }
 .service-card h3,.portfolio-body h3,.process-item h3,.pricing-card h3 { font-weight:600; }
 @media (min-width:720px) { p { font-size:16px; } }
+
+/* Typography system: Manrope is loaded once through next/font in app/layout.tsx.
+   It preserves the established scale and spacing while making local-service copy
+   calmer and more legible. */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-manrope), sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+.brand-name,
+.price,
+.proof-metrics strong {
+  font-family: var(--font-manrope), sans-serif;
+}
+
+h1,
+.hero-copy h1 {
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+h2,
+.section-heading h2,
+.contact-copy h2,
+.article-content h2 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+h3,
+h4,
+.service-card h3,
+.portfolio-body h3,
+.process-item h3,
+.pricing-card h3,
+.article-content h3,
+.article-content h4 {
+  font-weight: 600;
+}
+
+.desktop-nav,
+.brand-tagline,
+.footer-bottom,
+.contact-list,
+.article-content p,
+.article-content li {
+  font-weight: 400;
+}
+
+.btn,
+.nav-cta,
+.mobile-nav-cta,
+.consultation-form button {
+  font-weight: 600;
+}
+
+.eyebrow,
+.portfolio-body span,
+.pricing-label,
+.service-badge,
+.pricing-badge {
+  font-weight: 600;
+}
+
+.portfolio-reveal,
+.process-item > span,
+.pricing-card li,
+.form-row label,
+.site-footer h3,
+.footer-bottom a,
+.service-card strong {
+  font-weight: 600;
+}
+
+.pricing-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pricing-card:nth-child(3) { grid-column: auto; }
+.pricing-card-dark { background: #111; }
+.pricing-card-dark h3, .pricing-card-dark .price, .pricing-card-dark li { color: #fff; }
+.pricing-card-dark > p:not(.price) { color: #c9c9c9; }
+.pricing-card-dark .pricing-label { color: #111; }
+.pricing-card-dark li i { color: #fff; }
+.footer-grid { grid-template-columns: minmax(0, 1.25fr) repeat(2, minmax(0, 0.7fr)); gap: 44px; }
+.site-footer { padding: 56px 0 24px; }
+.site-footer p, .site-footer a:not(.footer-brand), .footer-location { font-size: 14px; line-height: 1.65; }
+.footer-location { display: block; color: #cfcfcf; }
+.brand-mark { width: 40px; height: 40px; }
+.brand-mark img { width: 34px; height: 34px; }
+.brand-name { font-size: 18px; }
+@media (max-width: 720px) { .pricing-grid, .footer-grid { grid-template-columns: 1fr; } .footer-grid { gap: 30px; } }
